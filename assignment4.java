@@ -1,11 +1,11 @@
 import java.util.*;
 public class assignment4{
    
-    public static double area(double a){
-        return a*a;
+    public static double area(double side){
+        return side*side;
     }
-     public static double area(double a,double b){
-        return a*b;
+     public static double area(double length,double breadth){
+        return length*breadth;
     }
     public static double area(double a,double b,double c){
         double s = (a+b+c)/2;
@@ -13,11 +13,11 @@ public class assignment4{
         area = Math.sqrt(s*(s-a)*(s-b)*(s-c));
         return area;
     }
-    public static double perimeter(double a){
-        return 4*a;
+    public static double perimeter(double side){
+        return 4*side;
     }
-    public static double perimeter(double a,double b){
-       return 2*(a+b); 
+    public static double perimeter(double length,double breadth){
+       return 2*(length+breadth); 
     }
     public static double perimeter(double a,double b,double c){
         return a+b+c;
@@ -27,7 +27,9 @@ public class assignment4{
         Scanner sc = new Scanner(System.in);
         int ch;
         do{
+        System.out.println("===========================================");
         System.out.println("***************SHAPE CRAFT*****************");
+        System.out.println("===========================================");
         System.out.println("******************MENU********************");
         System.out.println("1)Calculate area of:SQUARE");
         System.out.println("2)Calculate area of:RECTANGLE");
@@ -40,22 +42,22 @@ public class assignment4{
         ch=sc.nextInt();
         switch(ch){
             case 1:{
-                double a;
+                double side;
                 System.out.print("Enter side of square:");
-                a = sc.nextDouble();
+                side = sc.nextDouble();
                 System.out.println();
-                System.out.println("Area of side of square "+a+" is: "+area(a) );
+                System.out.println("Area of side of square "+side+" is: "+area(side) );
                 break;
             }
             case 2:{
-                double a,b;
+                double length,breadth;
                 System.out.print("Enter length of rectangle:");
-                a = sc.nextDouble();
+                length = sc.nextDouble();
                 System.out.println();
                 System.out.print("Enter breadth of rectangle:");
-                b = sc.nextDouble();
+                breadth = sc.nextDouble();
                 System.out.println();
-                System.out.println("Area of length: "+a+" and breadth: "+b+" of a rectangle is: "+area(a,b) );
+                System.out.println("Area of length: "+length+" and breadth: "+breadth+" of a rectangle is: "+area(length,breadth) );
                 break;
             }
             case 3:{
@@ -109,6 +111,9 @@ public class assignment4{
             case 7:
                 System.out.println("EXITING");
                 break;
+            default:{
+                System.out.println("Invalid choice");
+            }
         }
         }while(ch!=7);
 
