@@ -1,0 +1,5 @@
+public class prac{
+    public static void main(String args[]){
+        System.err.println("\u001B[31m()\u001B[0m");
+    }
+}

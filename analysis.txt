@@ -1,0 +1,8 @@
+Log Analysis Report
+-------------------
+Total Errors: 3
+Total Warnings: 2
+
+Warning Messages:
+WARNING: Memory usage is high
+WARNING: Disk space is low

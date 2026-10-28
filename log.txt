@@ -1,0 +1,9 @@
+
+INFO: Application started
+ERROR: Database connection failed
+WARNING: Memory usage is high
+INFO: User logged in
+ERROR: File not found
+WARNING: Disk space is low
+ERROR: Invalid password
+INFO: Application running
